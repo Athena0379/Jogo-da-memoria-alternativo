@@ -3,7 +3,6 @@ package com.tiwgo.atividade_bimestral
 import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.ImageButton
@@ -23,7 +22,9 @@ class jogo_16 : AppCompatActivity() {
 
     var selecionados: MutableList<ImageButton?> = mutableListOf(null, null)
 
-    var ponto: Int = 0
+    var placar_pares: Int = 0
+
+    var placar_movimentos: Int = 0
 
     var matrizTabuleiro: Array<Array<Int>> = Array(linha) {
         Array(coluna) { 0 }
@@ -56,9 +57,9 @@ class jogo_16 : AppCompatActivity() {
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
 
 
-        placarpontos = findViewById<TextView>(R.id.placar_pontos)
+        placarpontos = findViewById<TextView>(R.id.placar_pares)
 
-        progress_bar = findViewById<ProgressBar>(R.id.progress_bar)
+        //progress_bar = findViewById<ProgressBar>(R.id.progress_bar)
         slider = Slider(this)
 
         slider?.valueFrom = 0f
@@ -87,15 +88,10 @@ class jogo_16 : AppCompatActivity() {
                         tratarCliqueCarta(linha, coluna, botao)
                     }
                 }
-            }
-            slider?.addOnChangeListener { _, value: Float, fromUser: Boolean ->
-                progress_bar?.progress = value.toInt()
-                Log.d("text", slider?.valueFrom.toString())
-                if(value >= (slider?.valueTo ?: 0f)){
-                    val intent = Intent(this, teladeresultado::class.java)
-                    intent.putExtra(getString(R.string.pontos_keys), ponto)
-                    startActivity(intent)
-                }
+                //Pares encontrados so devem ser enviados quando todos os pares devem ser enviados
+                //val intent = Intent(this, teladeresultado::class.java)
+               //intent.putExtra(getString(R.string.pontos_keys), ponto)
+                //startActivity(intent)
             }
         }
     }
@@ -112,14 +108,17 @@ class jogo_16 : AppCompatActivity() {
             selecionados[contador]?.isEnabled = false
         }
        else{
+           placar_movimentos++
+
             if(ultimaCarta == pegaImagem(coordenada)){
                 selecionados[contador]?.isEnabled = false
-                ponto++
-                placarpontos?.text = ponto.toString()
+                placar_pares++
+                placarpontos?.text = placar_pares.toString()
                 selecionados.replaceAll{null}
-                if(ponto >= imagensDisponiveis.count()*2){
+                if(placar_pares >= imagensDisponiveis.count()*2){
                     val intent = Intent(this, teladeresultado::class.java)
-                    intent.putExtra(getString(R.string.pontos_keys), ponto)
+                    intent.putExtra(getString(R.string.pares), placar_pares)
+                    intent.putExtra(getString(R.string.movimentos), placar_movimentos)
                     startActivity(intent)
                 }
             }

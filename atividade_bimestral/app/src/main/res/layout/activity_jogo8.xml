@@ -43,7 +43,7 @@
                         android:text="Pares Encontrados:" />
 
                     <TextView
-                        android:id="@+id/placar_pontos"
+                        android:id="@+id/placar_pares"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

@@ -14,13 +14,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
-        val btn_start = findViewById<Button>(R.id.btn_facil)
+        val btn_start = findViewById<Button>(R.id.btn_start)
 
         btn_start.setOnClickListener {
             val intent = Intent(this, jogo_16::class.java)
             startActivity(intent)
         }
-        val btn_regras = findViewById<Button>(R.id.btn_comecar)
+        val btn_regras = findViewById<Button>(R.id.btn_regras)
 
         btn_regras.setOnClickListener {
             val intent = Intent(this, regras_e_mecanicas::class.java)

@@ -15,14 +15,24 @@ class teladeresultado : AppCompatActivity() {
         setContentView(R.layout.activity_teladeresultado)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
-        val btn_restart = findViewById<Button>(R.id.btn_restart)
+        val btn_tela_inicial = findViewById<Button>(R.id.btn_tela_inicial)
+        val btn_nova_partida = findViewById<Button>(R.id.btn_nova_partida)
 
-        var pontuacao_final = intent.getIntExtra(getString(R.string.pontos_keys), 0)
-        var pontos: TextView = findViewById(R.id.quantidade_movimentos)
-        pontos.text = "$pontuacao_final"
+        var movimento = intent.getIntExtra(getString(R.string.movimentos), 0)
+        var placar_movimentos: TextView = findViewById(R.id.placar_movimentos)
+        placar_movimentos.text = "$movimento"
 
-        btn_restart.setOnClickListener {
+
+        var pares = intent.getIntExtra(getString(R.string.pares), 0)
+        var placar_pares: TextView = findViewById(R.id.placar_pares)
+        placar_pares.text = "$pares"
+
+        btn_tela_inicial.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        btn_nova_partida.setOnClickListener {
+            val intent = Intent(this, nivel_dificuldade::class.java)
             startActivity(intent)
         }
     }
