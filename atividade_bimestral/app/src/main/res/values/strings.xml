@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">atividade_bimestral</string>
+    <string name="regra_1">Virar Cartas: O jogador toca em uma carta com a face para baixo para revelá-la (primeira seleção do turno).</string>
+    <string name="regra_2">Validação de Par: Se as duas cartas possuírem a mesma imagem, elas permanecem abertas, o jogador ganha pontos e os pares encontrados aumentam. Se forem diferentes, elas viram para baixo novamente após um breve instante.</string>
+    <string name="regra_3">Tentativas: O jogador possui um número limitado de erros/tentativas. Cada erro reduz o contador de vidas ou tentativas restantes.</string>
+    <string name="regra_4">Pontuação: Cada par encontrado adiciona pontos ao placar geral do jogador.</string>
+    <string name="pontos_keys">TOTAL_PONTOS</string>
+</resources>
