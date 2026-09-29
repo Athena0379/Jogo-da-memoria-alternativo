@@ -26,11 +26,23 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".tela_de_jogo"
+            android:name=".jogo_16"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".teladeresultado"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".jogo_12"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".jogo_8"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".nivel_dificuldade"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>

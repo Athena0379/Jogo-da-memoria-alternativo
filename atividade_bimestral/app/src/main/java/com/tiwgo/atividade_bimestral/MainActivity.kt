@@ -6,8 +6,6 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,13 +14,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
-        val btn_start = findViewById<Button>(R.id.btn_start)
+        val btn_start = findViewById<Button>(R.id.btn_facil)
 
         btn_start.setOnClickListener {
-            val intent = Intent(this, tela_de_jogo::class.java)
+            val intent = Intent(this, jogo_16::class.java)
             startActivity(intent)
         }
-        val btn_regras = findViewById<Button>(R.id.btn_regras)
+        val btn_regras = findViewById<Button>(R.id.btn_comecar)
 
         btn_regras.setOnClickListener {
             val intent = Intent(this, regras_e_mecanicas::class.java)

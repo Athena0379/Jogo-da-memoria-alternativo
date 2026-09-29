@@ -18,7 +18,7 @@ class teladeresultado : AppCompatActivity() {
         val btn_restart = findViewById<Button>(R.id.btn_restart)
 
         var pontuacao_final = intent.getIntExtra(getString(R.string.pontos_keys), 0)
-        var pontos: TextView = findViewById(R.id.pontuacao_final)
+        var pontos: TextView = findViewById(R.id.quantidade_movimentos)
         pontos.text = "$pontuacao_final"
 
         btn_restart.setOnClickListener {

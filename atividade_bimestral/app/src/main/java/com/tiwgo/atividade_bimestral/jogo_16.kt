@@ -4,22 +4,20 @@ import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.util.Log
-import android.view.TextureView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.ImageButton
 import android.widget.ProgressBar
-import android.widget.SeekBar
 import android.widget.TextView
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.slider.Slider
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-class tela_de_jogo : AppCompatActivity() {
+class jogo_16 : AppCompatActivity() {
 
     val linha: Int = 4
-    val coluna: Int = 6
+    val coluna: Int = 4
     var contador: Int = 0
     var ultimaCarta: Int = -1
 
@@ -54,7 +52,7 @@ class tela_de_jogo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_tela_de_jogo)
+        setContentView(R.layout.activity_jogo16)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
 
 

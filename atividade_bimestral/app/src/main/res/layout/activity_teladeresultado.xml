@@ -15,8 +15,8 @@
         tools:layout_editor_absoluteY="1dp">
 
         <LinearLayout
-            android:layout_width="275dp"
-            android:layout_height="347dp"
+            android:layout_width="383dp"
+            android:layout_height="433dp"
             android:layout_gravity="center"
             android:gravity="center"
             android:orientation="vertical"
@@ -34,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Parabens"
+                    android:text="Partida Concluida"
                     android:textColor="@color/design_default_color_primary"
                     android:textSize="34sp" />
 
@@ -47,7 +47,31 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="189dp"
+                    android:layout_height="33dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Dificuldade Selecionada:"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/dificuldade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -55,12 +79,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Pontuaçao Final:"
+                        android:text="Quantidade de movimentos:"
                         android:textColor="@color/design_default_color_primary_dark"
                         android:textSize="20sp" />
 
                     <TextView
-                        android:id="@+id/pontuacao_final"
+                        android:id="@+id/placar_movimentos"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -70,14 +94,49 @@
                         android:textSize="20sp" />
                 </LinearLayout>
 
-                <Button
-                    android:id="@+id/btn_restart"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Reiniciar"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="186dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Pares escontrados:"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/placar_pontos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_nova_partida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nova Partida" />
+
+                    <Button
+                        android:id="@+id/btn_tela_inicial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tela Inicial" />
+                </LinearLayout>
 
             </LinearLayout>
 
