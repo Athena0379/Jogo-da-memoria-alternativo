@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">atividade_bimestral</string>
+    <string name="app_name" translatable="false">Cartoes de Memória Lite</string>
 
     <string name="movimentos" translatable="false">placar_movimentos</string>
     <string name="pares" translatable="false">placar_pares</string>

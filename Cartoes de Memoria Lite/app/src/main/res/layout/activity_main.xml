@@ -14,7 +14,7 @@
         android:layout_height="71dp"
         android:layout_marginBottom="8dp"
         android:gravity="center"
-        android:text="@string/btn_comecar"
+        android:text="@string/cartoes_de_memoria"
         android:textColor="@color/design_default_color_error"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_start"
