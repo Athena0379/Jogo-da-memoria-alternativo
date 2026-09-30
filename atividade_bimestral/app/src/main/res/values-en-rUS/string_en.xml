@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="regra_1">Flipping Cards: The player taps a face-down card to reveal it (first selection of the turn).</string>
+    <string name="regra_2">Pair Validation: If the two cards show the same image, they remain face up, the player earns points, and the count of found pairs increases. If they are different, they flip back over after a brief moment.</string>
+    <string name="regra_3">Attempts: The player has a limited number of errors/attempts. Each error reduces the counter of remaining lives or attempts.</string>
+    <string name="regra_4">Scoring: Each pair found adds points to the players overall score.</string>
+
+    <string name="basicos">Rules and Mechanics</string>
+    <string name="btn_retornar">Return</string>
+    <string name="escolha">Difficulty</string>
+    <string name="btn_facil">Easy</string>
+    <string name="btn_medio">Medium</string>
+    <string name="btn_dificil">Hard</string>
+    <string name="concluida_partida">Match Concluded</string>
+    <string name="selecionada_dificuldade">Selected Difficulty:</string>
+
+    <string name="q_movimento">Number of moves:</string>
+    <string name="n_partida">New Game</string>
+    <string name="t_inicial">Start Screen</string>
+    <string name="p_encontrado">Pairs Found:</string>
+    <string name="n_movimento">Number of Moves:</string>
+    <string name="btn_comecar">Start</string>
+    <string name="btn_regras">Rules</string>
+    <string name="cartoes_de_memoria">Memory Cards Lite</string>
+
+</resources>

@@ -40,7 +40,7 @@
                         android:layout_width="94dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Pares Encontrados:" />
+                        android:text="@string/p_encontrado" />
 
                     <TextView
                         android:id="@+id/placar_pares"
@@ -62,7 +62,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Nivel de dificuldade:" />
+                        android:text="@string/selecionada_dificuldade" />
 
                     <TextView
                         android:id="@+id/nivel_dificuldade"
@@ -83,7 +83,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Numero de Movimentos:" />
+                        android:text="@string/n_movimento" />
 
                     <TextView
                         android:id="@+id/placar_movimentos"

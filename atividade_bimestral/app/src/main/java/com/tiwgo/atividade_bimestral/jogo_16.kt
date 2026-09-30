@@ -20,18 +20,14 @@ class jogo_16 : AppCompatActivity() {
         gerenciadorNivel.placar_movimentos = findViewById<TextView>(R.id.placar_movimentos)
         gerenciadorNivel.nivel_dificuldade = findViewById<TextView>(R.id.nivel_dificuldade)
         gerenciadorNivel.imagensDisponiveis = mutableListOf(
-            R.drawable.abelha,
-            R.drawable.beija_flor,
-            R.drawable.cachorro,
-            R.drawable.cobra,
-            R.drawable.galinha,
-            R.drawable.girafa,
-            R.drawable.leao,
-            R.drawable.papagaio,
-            R.drawable.peixe,
-            R.drawable.pinguim,
-            R.drawable.urso_panda,
-            R.drawable.zebra
+            R.drawable.alegre,
+            R.drawable.assustado,
+            R.drawable.bravo,
+            R.drawable.confuso,
+            R.drawable.contente,
+            R.drawable.emburrado,
+            R.drawable.surpreso,
+            R.drawable.triste,
             )
         gerenciadorNivel.nivel_dificuldade?.text = "Dificil"
 

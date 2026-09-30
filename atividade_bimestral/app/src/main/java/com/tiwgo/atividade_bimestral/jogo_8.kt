@@ -22,10 +22,10 @@ class jogo_8 : AppCompatActivity() {
         gerenciadorNivel.nivel_dificuldade = findViewById<TextView>(R.id.nivel_dificuldade)
         gerenciadorNivel.nivel_dificuldade?.text = "Facil"
         gerenciadorNivel.imagensDisponiveis = mutableListOf(
-            R.drawable.abelha,
-            R.drawable.beija_flor,
-            R.drawable.cachorro,
-            R.drawable.cobra,
+            R.drawable.surpreso,
+            R.drawable.assustado,
+            R.drawable.triste,
+            R.drawable.bravo,
         )
 
         gerenciadorNivel.sortearCartas()

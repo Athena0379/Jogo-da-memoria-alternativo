@@ -44,7 +44,6 @@ public class GerenciadorNivel(var linha: Int, var coluna: Int, var level: String
 
         val coordenada : IVector = IVector(linha,coluna )
 
-        Log.d("Gerenciador:", "foi")
         if(contador == 0){
 
             ultimaCarta = pegaImagem(coordenada)

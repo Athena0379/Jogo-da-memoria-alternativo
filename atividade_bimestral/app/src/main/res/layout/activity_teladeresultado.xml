@@ -34,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Partida Concluida"
+                    android:text="@string/concluida_partida"
                     android:textColor="@color/design_default_color_primary"
                     android:textSize="34sp" />
 
@@ -55,7 +55,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Dificuldade Selecionada:"
+                        android:text="@string/selecionada_dificuldade"
                         android:textColor="@color/design_default_color_primary_dark"
                         android:textSize="20sp" />
 
@@ -80,7 +80,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Quantidade de movimentos:"
+                        android:text="@string/q_movimento"
                         android:textColor="@color/design_default_color_primary_dark"
                         android:textSize="20sp" />
 
@@ -105,7 +105,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Pares escontrados:"
+                        android:text="@string/p_encontrado"
                         android:textColor="@color/design_default_color_primary_dark"
                         android:textSize="20sp" />
 
@@ -132,14 +132,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Nova Partida" />
+                        android:text="@string/n_partida" />
 
                     <Button
                         android:id="@+id/btn_tela_inicial"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Tela Inicial"
+                        android:text="@string/t_inicial"
                         android:textColorLink="#DEC9C9" />
                 </LinearLayout>
 
