@@ -19,13 +19,13 @@ class teladeresultado : AppCompatActivity() {
         val btn_nova_partida = findViewById<Button>(R.id.btn_nova_partida)
 
         var movimento = intent.getIntExtra(getString(R.string.movimentos), 0)
-        var placar_movimentos: TextView = findViewById(R.id.placar_movimentos)
-        placar_movimentos.text = "$movimento"
+        var movimentos_numeracao: TextView = findViewById(R.id.movimentos_numeracao)
+        movimentos_numeracao.text = "$movimento"
 
 
         var pares = intent.getIntExtra(getString(R.string.pares), 0)
-        var placar_pares: TextView = findViewById(R.id.placar_pares)
-        placar_pares.text = "$pares"
+        var pares_numeracao: TextView = findViewById(R.id.pares_numeracao)
+        pares_numeracao.text = "$pares"
 
         btn_tela_inicial.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)

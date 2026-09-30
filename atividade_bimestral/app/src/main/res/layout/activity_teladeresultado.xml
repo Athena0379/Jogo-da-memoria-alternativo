@@ -64,6 +64,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:text="0"
                         android:textAlignment="textEnd"
                         android:textColor="@color/design_default_color_primary_dark"
                         android:textSize="20sp" />
@@ -84,14 +85,15 @@
                         android:textSize="20sp" />
 
                     <TextView
-                        android:id="@+id/placar_movimentos"
+                        android:id="@+id/movimentos_numeracao"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="0"
                         android:textAlignment="textEnd"
-                        android:textColor="@color/design_default_color_primary_variant"
+                        android:textColor="@color/design_default_color_primary_dark"
                         android:textSize="20sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -108,14 +110,16 @@
                         android:textSize="20sp" />
 
                     <TextView
-                        android:id="@+id/placar_pares"
+                        android:id="@+id/pares_numeracao"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="0"
                         android:textAlignment="textEnd"
                         android:textColor="@color/design_default_color_primary_dark"
+                        android:textColorLink="#000000"
                         android:textSize="20sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -135,7 +139,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Tela Inicial" />
+                        android:text="Tela Inicial"
+                        android:textColorLink="#DEC9C9" />
                 </LinearLayout>
 
             </LinearLayout>

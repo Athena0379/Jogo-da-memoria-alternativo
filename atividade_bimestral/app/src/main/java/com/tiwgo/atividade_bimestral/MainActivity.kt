@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val btn_start = findViewById<Button>(R.id.btn_start)
 
         btn_start.setOnClickListener {
-            val intent = Intent(this, jogo_16::class.java)
+            val intent = Intent(this, nivel_dificuldade::class.java)
             startActivity(intent)
         }
         val btn_regras = findViewById<Button>(R.id.btn_regras)

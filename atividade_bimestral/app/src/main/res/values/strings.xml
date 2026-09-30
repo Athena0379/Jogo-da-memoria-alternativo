@@ -6,4 +6,5 @@
     <string name="regra_4">Pontuação: Cada par encontrado adiciona pontos ao placar geral do jogador.</string>
     <string name="movimentos">placar_movimentos</string>
     <string name="pares">placar_pares</string>
+    <string name="level">nivel_dificuldade</string>
 </resources>

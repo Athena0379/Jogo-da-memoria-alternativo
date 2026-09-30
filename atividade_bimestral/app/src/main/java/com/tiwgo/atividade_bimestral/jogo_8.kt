@@ -1,6 +1,8 @@
 package com.tiwgo.atividade_bimestral
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +13,22 @@ class jogo_8 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_jogo8)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+
+
+        var gerenciadorNivel: GerenciadorNivel = GerenciadorNivel(2, 4, "Facil", this)
+        gerenciadorNivel.placar_pares = findViewById<TextView>(R.id.placar_pares)
+        gerenciadorNivel.placar_movimentos = findViewById<TextView>(R.id.placar_movimentos)
+        gerenciadorNivel.nivel_dificuldade = findViewById<TextView>(R.id.nivel_dificuldade)
+        gerenciadorNivel.nivel_dificuldade?.text = "Facil"
+        gerenciadorNivel.imagensDisponiveis = mutableListOf(
+            R.drawable.abelha,
+            R.drawable.beija_flor,
+            R.drawable.cachorro,
+            R.drawable.cobra,
+        )
+
+        gerenciadorNivel.sortearCartas()
+        gerenciadorNivel.pegaBotoes()
     }
 }
